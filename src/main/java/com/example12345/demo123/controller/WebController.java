@@ -29,7 +29,7 @@ public class WebController {
     }
     @RequestMapping(value="/login1", method=RequestMethod.GET)
     public String createLogin(Model model){
-        model.addAttribute("user",
+        model.addAttribute("user", repo.findAll());
         return "login";
     }
     @RequestMapping(value="/create", method=RequestMethod.GET)
