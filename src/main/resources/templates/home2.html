@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<head>
+    <title>Security with sSpring Boot</title>
+    <link th:href="@{/css/bootstrap.min.css}" rel="stylesheet">
+    <link rel="icon" th:href="@{/img/ubuntu.png}"><x></x>
+
+    <script type="text/javascript" th:src="@{/js/bootstrap.min.js}"></script>
+    <script type="text/javascript" th:src="@{/js/jquery-3.3.1.slim.min.js}"></script>
+    <script type="text/javascript" th:src="@{/js/popper.min.js}"></script>
+</head>
+<body>
+<h1>Hello, This is Home page!</h1>
+<a style="color: blue" th:href="@{/create}">Guest Page</a>
+<br />
+<a style="color: blue" th:href="@{/login1}">Admin Page</a>
+</body>
+</html>
