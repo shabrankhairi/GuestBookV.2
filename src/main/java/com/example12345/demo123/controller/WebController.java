@@ -41,7 +41,7 @@ public class WebController {
     @RequestMapping(value="/create", method=RequestMethod.POST)
     public String create2(Model model, Guest guest) {
         model.addAttribute("guest", repo.save(guest));
-        return "redirect:/";
+        return "redirect:/home";
     }
 
     @RequestMapping(value="/edit/{id}", method=RequestMethod.GET)
